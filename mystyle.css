@@ -1,0 +1,117 @@
+.input-RED
+{
+   background: rgb(255,229,232);
+   border: 1px solid red;
+}
+.style1
+{
+   width: 48%;
+   border: 1px solid red;
+}
+.style2
+{
+   width: 99%;
+}
+p.RED
+{
+   color :red;
+}
+input[type=text]:required
+{
+    background: rgb(255,229,232);
+    border: 1px solid red;
+}
+input[type=text], select 
+{
+    padding: 8px 12px;
+    margin: 12px 1px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+input[type=date], select 
+{
+    padding: 8px 12px;
+    margin: 12px 1px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+input:focus {
+    background-color:rgb(225,240,250) ;
+
+}
+
+label
+{
+     font-family: Sans-serif;
+     color: rgb(80,80,80);
+     padding: 4px;
+     font-size: 14px;
+   
+}
+.header {
+    background-color: rgb(245,245,245);
+    padding: 40px;
+    text-align: center;
+}
+.main {
+    overflow: auto;
+    background-color: white;
+    padding: 20px 25px;
+    outline: 4px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    position: relative;
+}
+input[type=submit]
+{
+    background-color: rgb(76,76,76);
+    border: none;
+    color: white;
+    padding: 12px 40px;
+    margin: 4px 2px;
+    border-radius: 5px;
+}
+stardiv
+{
+   color: red;
+}
+body
+{
+  background-color: rgb(245,245,245);
+}
+h2
+{
+  margin: 30px 4px;
+  font-family: Sans-serif;
+  color: rgb(80,80,80);
+  font-weight: normal;
+  font-size: 25px;
+}
+p
+{ 
+  margin: 10px 4px;
+  line-height: 1.4;
+  text-align: justify;
+  font-family: Sans-serif;
+  color: rgb(100,100,100);
+  font-size: 13px;
+  font-weight: normal;
+}
+p2
+{
+   margin: 0px;
+   padding: 0px;
+  text-align: justify;
+  font-family: Sans-serif;
+  color: rgb(150,150,150);
+  font-size: 11px;
+  font-weight: normal;
+}
+
