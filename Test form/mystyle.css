@@ -1,0 +1,300 @@
+.header    /* set header and footer space */
+{
+    background-color: rgb(245,245,245);
+    padding: 40px;
+    text-align: center;
+}
+.main    /* Main space specs */
+ {
+    overflow: auto;
+    background-color: white;
+    padding: 20px 25px;
+    outline: 4px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    position: relative;
+}
+body    
+{
+  background-color: rgb(245,245,245);
+}
+h2
+{
+  margin: 30px 4px;
+  font-family: Sans-serif;
+  color: rgb(33, 47, 61);
+  font-weight: normal;
+  font-size: 25px;
+}
+p
+{ 
+  margin: 10px 4px;
+  line-height: 1.4;
+  text-align: justify;
+  font-family: Sans-serif;
+  color: rgb(100,100,100);
+  font-size: 13px;
+  font-weight: normal;
+}
+p2
+{
+   margin: 0px;
+   padding: 0px;
+  text-align: justify;
+  font-family: Sans-serif;
+  color: rgb(150,150,150);
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.style1    /* input Field Style 1 to set the width  for First name and last name */
+{
+   width: 48%;
+   height: 38px;
+}
+
+.style2   /* input Field Style 2 to set the width for other input field */
+{
+   width: 98%;
+   height: 38px;
+}
+
+label   /* set input field label attribute */
+{
+     font-family: Sans-serif;
+     color: rgb(80,80,80);
+     padding: 4px;
+     font-size: 16px; 
+     font-weight: normal;
+     color: rgb(33, 47, 61);
+}
+stardiv   /* add Red Star to the input field lable */
+{
+   color: red;
+   font-size: 18px;
+}
+
+input   /* Set border attribute for all input field */
+{
+  border: 1px solid #ccc;
+}
+
+input:focus /* Set background color for all input field when selected */
+{     
+    background-color:rgb(225,240,250) ;
+}
+
+p.RED     /* Set Red color for "This field is required." */
+{
+   color : rgb(229, 57, 53);
+   font-style: bold;
+   font-size: 14px;
+}
+
+input[type=text], select    /* set the attribute for input type text */
+{
+    padding: 7px 10px;
+    margin: 12px 1px;
+    display: inline-block;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+.input-normal /* class to set the  background color for (Date and Select field) to white to change the red color when input-red class is active */
+{
+  background: white;
+  border: 1px solid #ccc;
+}
+.input-RED  /* class to set the  background color for (Date and Select field) to RED when text field is required and empty */
+{
+   background: rgb(255, 171, 145);
+   border: 1px solid rgb(198, 40, 40);
+   color: rgb(231, 76, 60);
+}
+input[type=date], select   /* set the attribute for input type Date */
+{
+    padding: 7px 10px;
+    margin: 12px 1px;
+    display: inline-block;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+#Date1   /* set the pic for input type Date "Departure Date" */
+{
+  background-image:url('calender.PNG');
+  background-repeat:no-repeat;
+  background-position: right;
+  background-size: 40px;
+}
+#Date2   /* set the pic for input type Date "Return Date" */
+{
+  background-image:url('calender.PNG');
+  background-repeat:no-repeat;
+  background-position: right;
+  background-size: 40px;
+}
+input::-webkit-calendar-picker-indicator   /* hide Chrome calender picker indicator */
+{
+  color: rgba(0, 0, 0, 0);
+  opacity: 1
+}
+input::-webkit-calendar-picker-indicator:hover /* set Chrome calender picker indicator to pinter when the mouse run over */
+{
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Remove chrome clear button when set the date */
+
+input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-outer-spin-button, input[type=date]::-webkit-clear-button
+{
+  -webkit-appearance: none;
+
+}
+
+input[type=date]::-ms-clear     /* Remove Mozila clear button when set the date */
+{
+  color: red; 
+}
+
+.normal-Date     /* class to set the  background color to white to change the red color when input-red-Date class is active */
+{
+    background: white;
+}
+.input-RED-Date    /* class to set the  background color to RED when Date field is required and empty */
+{
+   background: rgb(255, 171, 145);
+   border: 1px solid rgb(198, 40, 40);
+   color: rgb(231, 76, 60);
+}
+
+input[type=time], select    /* set the attribute for input type Time */
+{
+    padding: 7px 10px;
+    margin: 12px 1px;
+    display: inline-block;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+select                     /* set the attribute for input type Select */
+{
+    padding: 12px 12px;
+    margin: 12px 1px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+/* custom radio input Class 
+
+
+Class 1: The container */
+.container {
+    display: inline-block;
+    position: relative;
+    padding-left: 42px;
+    padding-right: 42px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Class 2: Create a custom radio button */
+.checkmark {
+    position: absolute;
+    bottom: 4px;
+    left: 0px;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    border-width: 0.5px;
+    border-style: solid;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    border: 0.5px solid blue;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: rgb(76,76,76);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 4px;
+  left: 5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* class3 : Change radio text color to Red when no options chooses */
+.text-RED
+{
+    color: rgb(231, 76, 60);
+    font-size: 13px;
+}
+/* class4 : Change radio text color to white when test-Red class are enabled */
+.text-normal
+{
+  color: rgb(80,80,80);
+  font-size: 15px;
+}
+/* class5 : Change radio circule color to Red when no options chooses */
+.checkmark-RED
+{
+    background: white;
+    border: 2px solid rgb(231, 76, 60) ;
+}
+/* class6 : Change radio circule color to white when test-Red class are enabled */
+.checkmark-normal
+{
+    background: white;
+    border-color: rgb(80,80,80) ;
+}
+
+
+input[type=submit]   /* set the attribute for input button submit */
+{
+    background-color: rgb(76,76,76);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 20px 40px;
+}
+
+#submit       /* set button align  to the middel */
+{
+     text-align: center;
+}

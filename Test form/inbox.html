@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+ <head>
+      <link rel="stylesheet" type="text/css" href="mystyle.css">  
+      <script src="FormValidation.js"></script>
+  </head>
+<body>
+ 
+  <div class="header"></div>
+  <div class="main">
+    <h2>Booking Form</h2>
+    <p>Booking with us is simple and easy. Just fill in the booking form below and we will email your itinerary and payment details.
+      Please don't forget you have to submit the payment for your reservation in 24 hours after submitting the booking form. 
+    </p>
+  <hr><br>
+
+<form name="myForm" action="/action_page.php" onsubmit="return myFunction()" method="post">
+
+   <label for="fname">Name<stardiv>*</stardiv><br></label>
+     <input  type="text"  class="style1" name="firstname" id="fname" placeholder=First>
+     <input type="text"  class="style1" name="lastname" id="lname" placeholder=Last>
+        <p id="Required1" class="RED"></p>
+<br>
+   <label for="Phone">Phone<stardiv>*</stardiv><br></label>
+     <input  type="text"  class="style2" name="Phone" id="Phone" placeholder="###-###-####"  >
+      <p id="Required2" class="RED"></p>
+<br>
+  <label for="Email">Email<stardiv>*</stardiv><br></label>
+  <p><p2>We will send you a copy of the completed booking form to your e-mail address.</p2></p>
+     <input  type="text"  class="style2" name="Email" id="Email" placeholder="xxx@xxx.xx" >
+      <p id="Required3" class="RED"></p>
+<br>
+  <label for="Date">Departure Date/Time<stardiv>*</stardiv><br></label>
+     <input  type="date"  name="Departe-Date" id="Date1" placeholder="MM/DD/YYYY" class="style2" ><br>
+     <p id="Required4" class="RED"></p>
+<br>
+  <label for="Time">Time<br></label>
+     <input  type="Time"  name="Dep-Time" id="Time" placeholder="HH:MM AM" class="style2" ><br>
+<br>
+  <label for="Date">Return Date/Time<stardiv>*</stardiv><br></label>
+    <input  type="date"  name="Return-Date" id="Date2" placeholder="MM/DD/YYYY" class="style2" ><br>
+    <p id="Required5" class="RED"></p>
+<br>
+  <label for="Time">Time<br></label>
+    <input  type="Time"  name="Ret-Time" id="Time" placeholder="HH:MM AM" class="style2" ><br>
+<br>
+  <label for="Number-of-passenger">Number of guests/passengers<stardiv>*</stardiv><br></label>
+    <select id="select" class="style2">
+      <option value="">*Please select*</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select><br>
+    <p id="Required6" class="RED"></p>
+<br>
+  <label for="Type-of-room">Type of room/ticket<stardiv>*</stardiv><br></label>
+<br>
+    <label class="container"><span class="text-normal" id="txt-RD1"> Economy&nbsp;</span>
+      <input type="radio"  name="radio" value="Economy" id="rad1">
+      <span class="checkmark checkmark-normal" id="circ-RD1"></span>
+    </label> 
+    <label class="container"><span class="text-normal" id="txt-RD2">Premium
+      <input type="radio" name="radio" value="Premium" id="rad2">
+      <span class="checkmark checkmark-normal" id="circ-RD2"></span>
+    </label>
+    <label class="container"><span class="text-normal" id="txt-RD3">Business
+      <input type="radio" name="radio" value="Business" id="rad3">
+      <span class="checkmark checkmark-normal" id="circ-RD3"></span>
+    </label>
+    <label class="container"><span class="text-normal" id="txt-RD4">Deluxe
+      <input type="radio" name="radio" value="Deluxe" id="rad4">
+      <span class="checkmark checkmark-normal" id="circ-RD4"></span>
+</label>
+   <p id="Required7" class="RED"></p>
+
+  <p id="submit"><input type="submit" name="submit" value="Submit Booking Form" align="middle"></p>
+</form>
+</div>
+<div class="header"></div>
+</body>
+</html>
